@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="90dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_marginBottom="25dp"
+        android:textColor="#500303"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:text="COMPUTER"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/idComputer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="IdComputer"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/nameComputer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idComputer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Name Computer"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameComputer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Price"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/idCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/price"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="IdCategory"
+        android:inputType="textPersonName" />
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idCategory"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:background="#7C1F1F"
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Insert " />
+
+        <Button
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:background="#091FAC"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update" />
+
+        <Button
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:background="#FF0000"
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#FFF"
+        android:background="#D89F06"
+        android:id="@+id/button7"
+        android:layout_width="130dp"
+        android:layout_height="45dp"
+        android:text="View Data" />
+
+</LinearLayout>
